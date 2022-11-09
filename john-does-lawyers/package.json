@@ -1,0 +1,44 @@
+{
+    "name": "john-does-cars",
+    "version": "1.0.0",
+    "description": "John Doe's Cars Shop",
+    "main": "index.html",
+    "watch": {
+      "build": "./**"
+    },
+    "scripts": {
+      "clean": "rm -rf ./dist",
+      "css:lint": "csslint ./assets/styles/*.css",
+      "js:lint": "eslint --fix ./assets/scripts/*.js",
+      "watch": "npm-watch build",
+      "release:files": "sh copy-files.sh",
+      "release:css": "cleancss ./assets/styles/*.css -o dist/assets/styles/main.css",
+      "release:js": "uglifyjs -emc -o ./dist/assets/scripts/main.js -- ./assets/scripts/*.js",
+      "release": "npm-run-all clean release:*",
+      "build:files": "sh copy-files.sh",
+      "build:css": "concat-glob-cli -f ./assets/styles/*.css -o dist/assets/styles/main.css",
+      "build:js": "concat-glob-cli -f ./assets/scripts/*.js -o dist/assets/scripts/main.js",
+      "build": "npm-run-all clean build:*",
+      "serve": "npm run build & http-server -o -c-1 dist/",
+      "local": "http-server -o -c-1 ./"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/aseguragonzalez/mp0612.desarrollo-web-cliente.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "homepage": "",
+    "devDependencies": {
+      "clean-css-cli": "^5.6.0",
+      "concat": "^1.0.3",
+      "concat-glob-cli": "^0.1.0",
+      "csslint": "^1.0.5",
+      "eslint": "^8.14.0",
+      "eslint-config-google": "^0.14.0",
+      "http-server": "^14.1.0",
+      "npm-run-all": "^4.1.5",
+      "npm-watch": "^0.11.0",
+      "uglify-js": "^3.15.4"
+    }
+  }

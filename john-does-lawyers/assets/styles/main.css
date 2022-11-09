@@ -1,0 +1,105 @@
+html,
+body {
+  width: 95%;
+  min-height: 100%;
+  font-family: "arial", "helvetica";
+}
+
+#main {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.logo-socio {
+  width: auto;
+  height: 85px;
+}
+
+.logo-socio:first-child {
+  margin-right: 15px;
+}
+
+.button {
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+.form-textarea-control {
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.form-select-control {
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.form-control {
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.checkbox-list {
+  margin-top: 15px;
+}
+
+.checkbox-group-item {
+  margin: 5px 0px;
+  font-size: 1em;
+}
+
+.radio-group {
+  margin-top: 15px;
+}
+
+.radio-group-item {
+  margin: 5px 0px;
+  font-size: 1em;
+}
+
+.form-group {
+}
+
+.form-button-group {
+  margin: 50px 0px;
+}
+
+.form-label {
+  font-weight: bold;
+  display: block;
+}
+
+.help-text {
+  margin: 10px 0 20px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
