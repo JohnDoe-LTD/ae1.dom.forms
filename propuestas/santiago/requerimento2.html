@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requerimiento 2</title>
+  </head>
+  <body>
+    <div>
+      <form action="" id="formulario">
+        <label>Nombre</label> <br />
+        <input type="text" name="nombre" id="nombre" placeholder="Pon tu
+        nombre..." value=> <br /><br />
+        <label>Dirección:</label> <br />
+        <input
+          type="text"
+          name="direccion"
+          id="direccion"
+          placeholder="Pon tu dirección..."
+        />
+        <br /><br />
+        <label>Teléfono</label> <br />
+        <input
+          type="phone"
+          name="telefono"
+          id="telefono"
+          placeholder="Pon tu Teléfono..."
+        />
+        <br /><br />
+        <label>E-mail</label> <br />
+        <input
+          type="mail"
+          name="mail"
+          id="mail"
+          placeholder="Pon tu E-mail..."
+        />
+        <br /><br />
+
+        <label>Tamaño de pizza</label> <br />
+        <input type="radio" name="tamaño" id="pequeña" value="pequeña" />
+        Pequeña <br />
+        <input type="radio" name="tamaño" id="mediana" value="mediana" />
+        Mediana <br />
+        <input type="radio" name="tamaño" id="grande" value="grande" /> Grande
+        <br /><br />
+
+        <label>Ingredientes</label> <br />
+        <input type="checkbox" id="checkbox1" value="atun" /> Atún <br />
+        <input type="checkbox" id="checkbox2" value="salami" /> Salami <br />
+        <input type="checkbox" id="checkbox3" value="jamon" /> Jamón <br />
+        <input type="checkbox" id="checkbox4" value="aceitunas" /> Aceitunas
+        <br /><br />
+      </form>
+
+      <button onclick="todos()">¡Pedir pizza!</button>
+      <h3 id="verprecio"></h3>
+    </div>
+    <script src="js/requerimiento2.js"></script>
+  </body>
+</html>
