@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>John Doe's Pizzas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lorem..." />
+    <meta name="keyword" content="key1, key2, key3" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <h1>John Doe's Pizzas</h1>
+      <h2>La auténtica pizza Newyorkina</h2>
+    </header>
+    <main class="page-content">
+      <section>
+        <header>
+          <h3>Los secretos de la nona</h3>
+        </header>
+        <p class="text">
+          Todas nuestras pizzas llevan una base de deliciosa sala de tomate (la
+          receta casera secreta de la nona) junto con una capa de mozzarella
+          aderezada con una selección de hiervas aromáticas.
+        </p>
+        <p class="text">
+          No olvides que cuenta con abuntantes de jamón cocido, aceitunas y
+          champiñones.
+        </p>
+      </section>
+      <section>
+        <header>
+          <h3>¡Realiza tu pedido!</h3>
+        </header>
+        <form id="form" action="#" method="get">
+          <fieldset class="form-section">
+            <legend>Información de contacto</legend>
+            <div class="form-group">
+              <label for="name" class="form-label">
+                Nombre<small class="field-notes">(obligatorio)</small>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-control"
+                type="text"
+                title="Debe indicar su nombre"
+                placeholder="John Doe"
+              />
+              <p class="help-text">
+                Indique un nombre para dirigirnos a usted.
+              </p>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                Teléfono<small class="field-notes">(obligatorio)</small>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                class="form-control"
+                type="tel"
+                title="Debe introducir un teléfono de contacto"
+                placeholder="677985335"
+              />
+              <p class="help-text">
+                Indique un teléfono donde poder contactar si hay problemas en el
+                reparto.
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">
+                Email<small class="field-notes">(obligatorio)</small>
+              </label>
+              <input
+                id="email"
+                name="email"
+                class="form-control"
+                type="email"
+                title="Debe introducir una email de contacto"
+                placeholder="john.doe@gmail.com"
+              />
+              <p class="help-text">
+                Introduzca una dirección de email para el envío de los detalles
+                de su pedido.
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="address" class="form-label">
+                Dirección<small class="field-notes">(obligatorio)</small>
+              </label>
+              <textarea
+                id="address"
+                name="address"
+                class="form-control"
+                title="Debe introducir la dirección de entrega"
+                placeholder="Paseo de la Castellana 51, 3º D, Madrid"
+                rows="4"
+              ></textarea>
+              <p class="help-text">
+                Indique la dirección donde se entregará el pedido.
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="form-section">
+            <legend>Información del pedido</legend>
+            <div class="form-group">
+              <label class="form-label">Tamaño de la pizza</label>
+              <div id="size" class="radio-group">
+                <div class="radio-group-item">
+                  <input
+                    type="radio"
+                    value="s"
+                    class="size"
+                    name="size"
+                    id="size_s"
+                    data-price="5"
+                  />
+                  <label for="size_s">Pequeña <small>(+5€)</small></label>
+                </div>
+                <div class="radio-group-item">
+                  <input
+                    type="radio"
+                    value="m"
+                    class="size"
+                    name="size"
+                    id="size_m"
+                    data-price="10"
+                  />
+                  <label for="size_m">Mediana <small>(+10€)</small></label>
+                </div>
+                <div class="radio-group-item">
+                  <input
+                    type="radio"
+                    value="l"
+                    class="size"
+                    name="size"
+                    id="size_l"
+                    data-price="15"
+                  />
+                  <label for="size_l">Grande <small>(+15€)</small></label>
+                </div>
+              </div>
+              <p class="help-text">Indique el tamaño de pizza que desea.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Toppings</label>
+              <div id="toppings" class="checkbox-list">
+                <div class="checkbox-group-item">
+                  <input
+                    type="checkbox"
+                    class="toppings"
+                    name="bacon"
+                    id="bacon"
+                  />
+                  <label for="bacon">Bacon <small>(+1€)</small></label>
+                </div>
+                <div class="checkbox-group-item">
+                  <input
+                    type="checkbox"
+                    class="toppings"
+                    name="mushrooms"
+                    id="mushrooms"
+                  />
+                  <label for="mushrooms">
+                    Champiñones <small>(+1€)</small>
+                  </label>
+                </div>
+                <div class="checkbox-group-item">
+                  <input
+                    type="checkbox"
+                    class="toppings"
+                    name="cheese"
+                    id="cheese"
+                  />
+                  <label for="cheese">
+                    Extra de queso <small>(+1€)</small>
+                  </label>
+                </div>
+                <div class="checkbox-group-item">
+                  <input
+                    type="checkbox"
+                    class="toppings"
+                    name="tomato"
+                    id="tomato"
+                  />
+                  <label for="tomato">
+                    Tomate en rodajas <small>(+1€)</small>
+                  </label>
+                </div>
+                <div class="checkbox-group-item">
+                  <input
+                    type="checkbox"
+                    class="toppings"
+                    name="onion"
+                    id="onion"
+                  />
+                  <label for="onion">Cebolla <small>(+1€)</small></label>
+                </div>
+                <div class="checkbox-group-item">
+                  <input type="checkbox" class="toppings" name="bbq" id="bbq" />
+                  <label for="bbq">Salsa barbacoa <small>(+1€)</small></label>
+                </div>
+              </div>
+              <p class="help-text">Seleccione los topping que desea.</p>
+            </div>
+          </fieldset>
+          <fieldset class="form-section">
+            <div class="amount">
+              <p>Importe: <span id="total">0</span> €</p>
+            </div>
+          </fieldset>
+          <div class="form-button-group">
+            <button id="reset-btn" class="btn btn-secondary" type="reset">
+              Cancelar
+            </button>
+            <button id="submit-btn" class="btn btn-primary" type="submit">
+              Comprar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>John Doe's Pizzas &copy; 2022</p>
+      <p>Paseo de la Castellana 101, Madrid</p>
+    </footer>
+    <script src="/assets/scripts/main.js"></script>
+  </body>
+</html>
