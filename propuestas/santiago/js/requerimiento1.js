@@ -4,7 +4,7 @@ function cargar() {
   formulario.setAttribute("action", "");
 
   //Agregando el formulario al DOM
-  document.body.appendChild(formulario);
+  document.getElementById("contenido").appendChild(formulario);
 
   //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //++++++++++++++++++++++++++++++++++++++++++ CAMPO DE TEXTO DNI +++++++++++++++++++++++++++++++++++++++++++++

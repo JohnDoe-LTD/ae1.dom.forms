@@ -8,11 +8,16 @@
   </head>
   <body>
     <div>
-      <form action="" id="formulario">
-        <label>Nombre</label> <br />
-        <input type="text" name="nombre" id="nombre" placeholder="Pon tu
-        nombre..." value=> <br /><br />
-        <label>Dirección:</label> <br />
+      <form action="#" id="formulario">
+        <label for="nombre">Nombre</label> <br />
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Pon tunombre..."
+        />
+        <br /><br />
+        <label for="direccion">Dirección:</label> <br />
         <input
           type="text"
           name="direccion"
@@ -20,7 +25,7 @@
           placeholder="Pon tu dirección..."
         />
         <br /><br />
-        <label>Teléfono</label> <br />
+        <label for="telefono">Teléfono</label> <br />
         <input
           type="phone"
           name="telefono"
@@ -28,7 +33,7 @@
           placeholder="Pon tu Teléfono..."
         />
         <br /><br />
-        <label>E-mail</label> <br />
+        <label for="email">E-mail</label> <br />
         <input
           type="mail"
           name="mail"
@@ -39,21 +44,32 @@
 
         <label>Tamaño de pizza</label> <br />
         <input type="radio" name="tamaño" id="pequeña" value="pequeña" />
-        Pequeña <br />
+        <label for="pequeña">Pequeña</label>
+        <br />
         <input type="radio" name="tamaño" id="mediana" value="mediana" />
-        Mediana <br />
-        <input type="radio" name="tamaño" id="grande" value="grande" /> Grande
+        <label for="mediana">Mediana</label>
+        <br />
+        <input type="radio" name="tamaño" id="grande" value="grande" />
+        <label for="grande">Grande</label>
         <br /><br />
 
         <label>Ingredientes</label> <br />
-        <input type="checkbox" id="checkbox1" value="atun" /> Atún <br />
-        <input type="checkbox" id="checkbox2" value="salami" /> Salami <br />
-        <input type="checkbox" id="checkbox3" value="jamon" /> Jamón <br />
-        <input type="checkbox" id="checkbox4" value="aceitunas" /> Aceitunas
-        <br /><br />
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="atun" />
+        <label for="checkbox1">Atún</label> <br />
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="salami" />
+        <label for="checkbox2">Salami</label> <br />
+        <input type="checkbox" id="checkbox3" name="checkbox3" value="jamon" />
+        <label for="checkbox3">Jamón</label> <br />
+        <input
+          type="checkbox"
+          id="checkbox4"
+          name="checkbox4"
+          value="aceitunas"
+        />
+        <label for="checkbox4">Aceitunas</label> <br /><br />
       </form>
 
-      <button onclick="todos()">¡Pedir pizza!</button>
+      <button id="pedir_pizza">¡Pedir pizza!</button>
       <h3 id="verprecio"></h3>
     </div>
     <script src="js/requerimiento2.js"></script>
